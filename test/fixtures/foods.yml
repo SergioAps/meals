@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+yo_pro:
+  name: Yo Pro Danone
+  grams: 70
+  portion: 1.0
+
+filete_pescado:
+  name: Filete de Pescado
+  grams: 40
+  portion: 1.0
