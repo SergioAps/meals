@@ -23,7 +23,7 @@ class FoodTest < ActiveSupport::TestCase
   end
 
   test "grams can be blank" do
-    food = Food.new(name: "bistec de res", portion: 1.0)
+    food = Food.new(name: "bistec de res", portion: 1.0, group: groups(:legumes))
 
     assert food.valid?
   end
@@ -44,5 +44,12 @@ class FoodTest < ActiveSupport::TestCase
 
     assert food.invalid?
     assert_equal ["Specify number of portions or grams"], food.errors[:base]
+  end
+
+  test "group can't be blank" do
+    food = Food.new(name: "bistec de res", portion: 1.0)
+
+    assert food.invalid?
+    assert_equal ["must exist"], food.errors[:group]
   end
 end
