@@ -2,7 +2,7 @@ require "application_system_test_case"
 
 class FoodsTest < ApplicationSystemTestCase
   setup do
-    @food = foods(:one)
+    @food = foods(:yo_pro)
   end
 
   test "visiting the index" do

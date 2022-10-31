@@ -2,7 +2,7 @@ require "test_helper"
 
 class FoodsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @food = foods(:one)
+    @food = foods(:yo_pro)
   end
 
   test "should get index" do
