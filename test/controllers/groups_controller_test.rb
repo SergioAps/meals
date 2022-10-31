@@ -2,7 +2,7 @@ require "test_helper"
 
 class GroupsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @group = groups(:one)
+    @group = groups(:legumes)
   end
 
   test "should get index" do
