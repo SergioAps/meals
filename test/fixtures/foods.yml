@@ -4,8 +4,10 @@ yo_pro:
   name: Yo Pro Danone
   grams: 70
   portion: 1.0
+  group: poa
 
 filete_pescado:
   name: Filete de Pescado
   grams: 40
   portion: 1.0
+  group: poa

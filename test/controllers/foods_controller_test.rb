@@ -17,7 +17,7 @@ class FoodsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create food" do
     assert_difference("Food.count") do
-      post foods_url, params: { food: { name: "Bistec de Res", grams: 30, portion: 1.0 } }
+      post foods_url, params: { food: { name: "Bistec de Res", grams: 30, portion: 1.0, group_id: groups(:poa).id } }
     end
 
     assert_redirected_to food_url(Food.last)
